@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Генератор идей для постов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Контент за минуту</p>
+      <h1>Генератор идей для постов</h1>
+      <p class="lead">Выберите формат — получите готовые идеи для рилс, сторис и недельного плана.</p>
+    </header>
+
+    <section class="card script-card">
+      <h2>Сценарий рилс</h2>
+      <ol class="script">
+        <li><span>Хук 0–3 сек.</span> Смотрите в камеру и говорите: «Я думала, что у меня всё под контролем…»</li>
+        <li><span>Контекст 3–8 сек.</span> Показываете утро: кофе, ноут, список дел на весь экран.</li>
+        <li><span>Поворот 8–15 сек.</span> Кот садится на клавиатуру, план рушится, вы спокойно киваете.</li>
+        <li><span>Панч 15–22 сек.</span> Текст на экране: «Новый план: выжить до обеда».</li>
+        <li><span>CTA 22–25 сек.</span> «Сохрани, если это твоё утро. Напиши в комментариях, кто виноват — кот или понедельник».</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Что сгенерировать</h2>
+      <ul class="options">
+        <li>
+          <button type="button" data-type="reels">5 сценариев рилс в лайф-юмористической теме</button>
+        </li>
+        <li>
+          <button type="button" data-type="stories">3 идеи сторис на сегодня</button>
+        </li>
+        <li>
+          <button type="button" data-type="plan">Контент-план на неделю</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card result-card" id="result" hidden>
+      <h2 id="result-title">Результат</h2>
+      <div id="result-body"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
